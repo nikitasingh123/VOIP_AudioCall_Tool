@@ -103,8 +103,21 @@ function maybePreferCodec(sdp, type, dir, codec) {
 ```javascript
 function findLineInRange(sdpLines, startLine, endLine, prefix, substr) {
 ```
-* Return Type - index of line in sdpLines starting with prefix, null otherwise
-* Parametesr - sdp (default), type (audio), dir (send), codec (value)
+* Return Type - index of line in sdpLines starting with prefix and containing substring, null otherwise
+* Parametesr - sdpLines, startLine, endLine, prefix, substr
 * Purpose - Find the line in sdpLines[startLine....endLine - 1] that starts with |prefix| and, if specified, contains |substr|.
 
+```javascript
+function getCodecPayloadType(sdpLine)  {
+```
+* Return Type - matched sdpLine
+* Parametesr - sdpLine
+* Purpose - Gets the codec payload type from an a=rtpmap:X line
+
+```javascript
+function setDefaultCodec(mLine, payload)  {
+```
+* Return Type - Returns a new m= line with the specified codec as the first one.
+* Parametesr - sdpLine
+* Purpose - to set the first codec as default codec 
 
