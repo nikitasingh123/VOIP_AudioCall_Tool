@@ -81,9 +81,7 @@ function gotRemoteStream(e) {
 ```
 * Return Type - None
 * Parameter - e   //remote stream 
-* Purpose - get remote stream from other user```javascript
-function gotRemoteStream(e) {
-}
+* Purpose - get remote stream from other user
 
 ```javascript
 function onIceCandidate(pc, event) {
@@ -102,8 +100,11 @@ function maybePreferCodec(sdp, type, dir, codec) {
 * Parametesr - sdp (default), type (audio), dir (send), codec (value)
 * Purpose - returns sdp after selecting a particular codec
 
-
-
-
+```javascript
+function findLineInRange(sdpLines, startLine, endLine, prefix, substr) {
+```
+* Return Type - index of line in sdpLines starting with prefix, null otherwise
+* Parametesr - sdp (default), type (audio), dir (send), codec (value)
+* Purpose - Find the line in sdpLines[startLine....endLine - 1] that starts with |prefix| and, if specified, contains |substr|.
 
 
