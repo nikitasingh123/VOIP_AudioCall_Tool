@@ -57,15 +57,6 @@ function gotDescription1(desc) {
 ```
 * Return Type - pc2.createAnswer()
 * Parameter - desc
-* Purpose - set local description by chosing audio codec and set default codec for remote user
-
-
-```javascript
-function gotDescription1(desc) {
-}
-```
-* Return Type - pc2.createAnswer()
-* Parameter - desc
 * Purpose - set local description by chosing audio codec and set default codec for remote user by calling function gotDescription2
 
 ```javascript
@@ -83,4 +74,36 @@ function hangup() {
 * Return Type - None
 * Parameter - None 
 * Purpose - closes the event call and stops audio stream tracks
+
+```javascript
+function gotRemoteStream(e) {
+}
+```
+* Return Type - None
+* Parameter - e   //remote stream 
+* Purpose - get remote stream from other user```javascript
+function gotRemoteStream(e) {
+}
+
+```javascript
+function onIceCandidate(pc, event) {
+}
+```
+* Return Type - None
+* Parameters - pc, event
+* Purpose - gets remote user ICE server to establish connection
+
+
+```javascript
+function maybePreferCodec(sdp, type, dir, codec) {
+}
+```
+* Return Type - sdp (after chosing codec)
+* Parametesr - sdp (default), type (audio), dir (send), codec (value)
+* Purpose - returns sdp after selecting a particular codec
+
+
+
+
+
 
