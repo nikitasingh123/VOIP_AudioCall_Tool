@@ -143,7 +143,7 @@ function startRecording() {
 * Purpose - starts recording the available audio stream to console using **MediaRecorder** API with suported mimeType. Calls the methods for playing and downloading after onclick event.
 
 ```javascript
-function startRecording() {
+function stopRecording() {
 }
 ```
 * Return Type - None
@@ -169,3 +169,7 @@ downloadButton.addEventListener(){
 }
 ```
 * Purpose - on clicking download button, it saves the recoredaudio stream in a recording.wav file and downloads it
+
+#### [local_p2p_record.js](https://github.com/SRIDOutsideProjects/VoIP_Webrtc_Tool/blob/Code/local_p2p_record.js)
+
+**All the functions, constructors or methods used in this file are already mention in *main.js* and *record.js* files**
