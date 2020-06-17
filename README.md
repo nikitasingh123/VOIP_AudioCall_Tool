@@ -15,14 +15,21 @@ P2P_RemoteAudio_Recording.html, remote_p2p_record.js | Establish peer-to-peer au
 
 ### Description about functions used in javascript Files :
 #### [Stream_Audio.html](https://github.com/SRIDOutsideProjects/VoIP_Webrtc_Tool/blob/Code/Stream_Audio.html)
-        * Function Name       Return Type         Parameters
-        * handleSuccess       none                stream       
-        * handleError         none                error  
 
 ```javascript
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
+function handleSuccess(stream) {
 }
 ```
+Return Type - None
+Parameter - stream 
+Purpose - stream local audio into audio element, if **getUserMedia** API gets local audio 
+
+
+```javascript
+function handleError(error) {
+}
+```
+Return Type - None
+Parameter - error 
+Purpose - give error message to console, if **getUserMedia** API gets local audio 
+
