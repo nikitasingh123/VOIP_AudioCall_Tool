@@ -18,3 +18,11 @@ P2P_RemoteAudio_Recording.html, remote_p2p_record.js | Establish peer-to-peer au
         * Function Name       Return Type         Parameters
         * handleSuccess       none                stream       
         * handleError         none                error  
+
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
