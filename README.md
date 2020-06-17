@@ -162,13 +162,13 @@ recordButton.addEventListener(){
 playButton.addEventListener(){
 }
 ```
-* Purpose - on clicking play button makes the recoredaudio stream available to an audio element and plays it
+* Purpose - on clicking play button makes the recordedaudio stream available to an audio element and plays it
 
 ```javascript
 downloadButton.addEventListener(){
 }
 ```
-* Purpose - on clicking download button, it saves the recoredaudio stream in a recording.wav file and downloads it
+* Purpose - on clicking download button, it saves the recordedaudio stream in a recording.wav file and downloads it
 
 #### [local_p2p_record.js](https://github.com/SRIDOutsideProjects/VoIP_Webrtc_Tool/blob/Code/local_p2p_record.js)
 
@@ -181,7 +181,7 @@ function gotStream(stream) {
   ......
 }
 ```
-*In tis file, local stream is recorded and downloaded*
+*In this file, local stream is recorded and downloaded*
 
 
 #### [remote_p2p_record.js](https://github.com/SRIDOutsideProjects/VoIP_Webrtc_Tool/blob/Code/remote_p2p_record.js)
@@ -195,5 +195,5 @@ function gotRemoteStream(e) {
   ......
 }
 ```
-*In tis file, remote stream is recorded and downloaded**
+*In this file, remote stream is recorded and downloaded**
 
