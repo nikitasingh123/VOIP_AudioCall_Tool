@@ -13,5 +13,6 @@ P2P_RemoteAudio_Recording.html, remote_p2p_record.js | Establish peer-to-peer au
 
 *Files mentioned together(html and javascript) are to be run together on web browser(use Chrome as it supports all latest features of **WebRTC**)*
 
-
+### Description about functions used in javascript Files
+#### [Stream_Audio.html](https://github.com/SRIDOutsideProjects/VoIP_Webrtc_Tool/blob/Code/Stream_Audio.html)
 
