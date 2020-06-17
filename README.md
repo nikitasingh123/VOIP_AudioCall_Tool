@@ -20,16 +20,16 @@ P2P_RemoteAudio_Recording.html, remote_p2p_record.js | Establish peer-to-peer au
 function handleSuccess(stream) {
 }
 ```
-Return Type - None
-Parameter - stream 
-Purpose - stream local audio into audio element, if **getUserMedia** API gets local audio 
+* Return Type - None
+* Parameter - stream 
+* Purpose - stream local audio into audio element, if **getUserMedia** API gets local audio 
 
 
 ```javascript
 function handleError(error) {
 }
 ```
-Return Type - None
-Parameter - error 
-Purpose - give error message to console, if **getUserMedia** API gets local audio 
+* Return Type - None
+* Parameter - error 
+* Purpose - give error message to console, if **getUserMedia** API gets local audio 
 
