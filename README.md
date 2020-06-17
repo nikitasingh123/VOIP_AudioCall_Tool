@@ -102,6 +102,7 @@ function maybePreferCodec(sdp, type, dir, codec) {
 
 ```javascript
 function findLineInRange(sdpLines, startLine, endLine, prefix, substr) {
+}
 ```
 * Return Type - index of line in sdpLines starting with prefix and containing substring, null otherwise
 * Parametesr - sdpLines, startLine, endLine, prefix, substr
@@ -109,6 +110,7 @@ function findLineInRange(sdpLines, startLine, endLine, prefix, substr) {
 
 ```javascript
 function getCodecPayloadType(sdpLine)  {
+}
 ```
 * Return Type - matched sdpLine
 * Parametesr - sdpLine
@@ -116,6 +118,7 @@ function getCodecPayloadType(sdpLine)  {
 
 ```javascript
 function setDefaultCodec(mLine, payload)  {
+}
 ```
 * Return Type - Returns a new m= line with the specified codec as the first one.
 * Parametesr - sdpLine
@@ -125,6 +128,7 @@ function setDefaultCodec(mLine, payload)  {
 
 ```javascript
 function handleDataAvailable(event) {
+}
 ```
 * Return Type - None
 * Parametesr - event
@@ -132,6 +136,7 @@ function handleDataAvailable(event) {
 
 ```javascript
 function startRecording() {
+}
 ```
 * Return Type - None
 * Parametesr - None
@@ -139,10 +144,28 @@ function startRecording() {
 
 ```javascript
 function startRecording() {
+}
 ```
 * Return Type - None
 * Parametesr - None
 * Purpose - stops **MediaRecorder** API i.e. recording stops
 
+#### Methods used :
 
+```javascript
+recordButton.addEventListener(){
+}
+```
+* Purpose - on clicking record button calls startRecording() function and changes text of button to 'Stop Recording';on clicking again calls startRecording() function.
 
+```javascript
+playButton.addEventListener(){
+}
+```
+* Purpose - on clicking play button makes the recoredaudio stream available to an audio element and plays it
+
+```javascript
+downloadButton.addEventListener(){
+}
+```
+* Purpose - on clicking download button, it saves the recoredaudio stream in a recording.wav file and downloads it
