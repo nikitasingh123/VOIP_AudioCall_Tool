@@ -97,7 +97,7 @@ function maybePreferCodec(sdp, type, dir, codec) {
 }
 ```
 * Return Type - sdp (after chosing codec)
-* Parametesr - sdp (default), type (audio), dir (send), codec (value)
+* Parameters - sdp (default), type (audio), dir (send), codec (value)
 * Purpose - returns sdp after selecting a particular codec
 
 ```javascript
@@ -105,7 +105,7 @@ function findLineInRange(sdpLines, startLine, endLine, prefix, substr) {
 }
 ```
 * Return Type - index of line in sdpLines starting with prefix and containing substring, null otherwise
-* Parametesr - sdpLines, startLine, endLine, prefix, substr
+* Parameters - sdpLines, startLine, endLine, prefix, substr
 * Purpose - Find the line in sdpLines[startLine....endLine - 1] that starts with |prefix| and, if specified, contains |substr|.
 
 ```javascript
@@ -113,7 +113,7 @@ function getCodecPayloadType(sdpLine)  {
 }
 ```
 * Return Type - matched sdpLine
-* Parametesr - sdpLine
+* Parameter - sdpLine
 * Purpose - Gets the codec payload type from an a=rtpmap:X line
 
 ```javascript
@@ -121,7 +121,7 @@ function setDefaultCodec(mLine, payload)  {
 }
 ```
 * Return Type - Returns a new m= line with the specified codec as the first one.
-* Parametesr - sdpLine
+* Parameter - sdpLine
 * Purpose - to set the first codec as default codec 
 
 #### [record.js](https://github.com/SRIDOutsideProjects/VoIP_Webrtc_Tool/blob/Code/record.js)
@@ -131,7 +131,7 @@ function handleDataAvailable(event) {
 }
 ```
 * Return Type - None
-* Parametesr - event
+* Parameter - event
 * Purpose - pushes the data of event(play, record or download) in recordedBlobs array
 
 ```javascript
@@ -139,7 +139,7 @@ function startRecording() {
 }
 ```
 * Return Type - None
-* Parametesr - None
+* Parameter - None
 * Purpose - starts recording the available audio stream to console using **MediaRecorder** API with suported mimeType. Calls the methods for playing and downloading after onclick event.
 
 ```javascript
@@ -147,7 +147,7 @@ function stopRecording() {
 }
 ```
 * Return Type - None
-* Parametesr - None
+* Parameter - None
 * Purpose - stops **MediaRecorder** API i.e. recording stops
 
 #### Methods used :
@@ -195,5 +195,5 @@ function gotRemoteStream(e) {
   ......
 }
 ```
-*In this file, remote stream is recorded and downloaded**
+*In this file, remote stream is recorded and downloaded*
 
