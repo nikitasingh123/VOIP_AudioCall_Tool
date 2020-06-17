@@ -173,3 +173,27 @@ downloadButton.addEventListener(){
 #### [local_p2p_record.js](https://github.com/SRIDOutsideProjects/VoIP_Webrtc_Tool/blob/Code/local_p2p_record.js)
 
 **All the functions, constructors or methods used in this file are already mention in *main.js* and *record.js* files**
+
+```javascript
+function gotStream(stream) {
+  ......
+  window.stream = stream;  // make localstream available to browser console
+  ......
+}
+```
+*In tis file, local stream is recorded and downloaded*
+
+
+#### [remote_p2p_record.js](https://github.com/SRIDOutsideProjects/VoIP_Webrtc_Tool/blob/Code/remote_p2p_record.js)
+
+**All the functions, constructors or methods used in this file are already mention in *main.js* and *record.js* files**
+
+```javascript
+function gotRemoteStream(e) {
+  ......
+  window.stream = audio2.srcObject;   // make remotestream available to browser console
+  ......
+}
+```
+*In tis file, remote stream is recorded and downloaded**
+
