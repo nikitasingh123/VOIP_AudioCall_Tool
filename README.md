@@ -31,5 +31,56 @@ function handleError(error) {
 ```
 * Return Type - None
 * Parameter - error 
-* Purpose - give error message to console, if **getUserMedia** API gets local audio 
+* Purpose - give error message to console, if **getUserMedia** API doesn't get local audio 
+
+#### [main.js](https://github.com/SRIDOutsideProjects/VoIP_Webrtc_Tool/blob/Code/main.js)
+
+```javascript
+function gotStream(stream) {
+}
+```
+* Return Type - None
+* Parameter - stream 
+* Purpose - get local stream and create an offer using **createOffer** constructor
+
+```javascript
+function call() {
+}
+```
+* Return Type - None
+* Parameter - None 
+* Purpose - initiates a call event by establishing peer connection using **RTCPeerConnection** interface
+
+```javascript
+function gotDescription1(desc) {
+}
+```
+* Return Type - pc2.createAnswer()
+* Parameter - desc
+* Purpose - set local description by chosing audio codec and set default codec for remote user
+
+
+```javascript
+function gotDescription1(desc) {
+}
+```
+* Return Type - pc2.createAnswer()
+* Parameter - desc
+* Purpose - set local description by chosing audio codec and set default codec for remote user by calling function gotDescription2
+
+```javascript
+function gotDescription2(desc) {
+}
+```
+* Return Type - None
+* Parameter - desc
+* Purpose - set remote description by chosing audio codec 
+
+```javascript
+function hangup() {
+}
+```
+* Return Type - None
+* Parameter - None 
+* Purpose - closes the event call and stops audio stream tracks
 
