@@ -121,3 +121,28 @@ function setDefaultCodec(mLine, payload)  {
 * Parametesr - sdpLine
 * Purpose - to set the first codec as default codec 
 
+#### [record.js](https://github.com/SRIDOutsideProjects/VoIP_Webrtc_Tool/blob/Code/record.js)
+
+```javascript
+function handleDataAvailable(event) {
+```
+* Return Type - None
+* Parametesr - event
+* Purpose - pushes the data of event(play, record or download) in recordedBlobs array
+
+```javascript
+function startRecording() {
+```
+* Return Type - None
+* Parametesr - None
+* Purpose - starts recording the available audio stream to console using **MediaRecorder** API with suported mimeType. Calls the methods for playing and downloading after onclick event.
+
+```javascript
+function startRecording() {
+```
+* Return Type - None
+* Parametesr - None
+* Purpose - stops **MediaRecorder** API i.e. recording stops
+
+
+
