@@ -1,0 +1,41 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta id="theme-color" name="theme-color" content="#ffffff">
+    <base target="_blank">
+
+    <title>Peer to peer connection: audio only</title>
+
+</head>
+
+<body>
+
+<div id="container">
+
+    <div id="audio">
+        <div>
+            <div class="label">Local audio:</div>
+            <audio id="audio1" autoplay controls muted></audio>
+        </div>
+        <div>
+            <div class="label">Remote audio:</div>
+            <audio id="audio2" autoplay controls></audio>
+        </div>
+    </div>
+
+    <div id="buttons">
+        <select id="codec">
+            <option value="opus">Opus</option>
+            <option value="ISAC">iSAC 16K</option>
+            <option value="G722">G722</option>
+            <option value="PCMU">PCMU</option>
+        </select>
+        <button id="callButton">Call</button>
+        <button id="hangupButton">Hang Up</button>
+    </div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
