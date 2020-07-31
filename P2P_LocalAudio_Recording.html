@@ -1,0 +1,64 @@
+<html> 
+ 
+   <head> 
+      <title>WebRTC VOIP tool for P2P local audio recording</title>
+   </head>
+	
+   <style>
+	
+      body { 
+         background: #eee; 
+         padding: 5% 0; 
+      } 
+
+   </style>
+	
+   <body>
+	
+  <div id="container">
+
+    <div id="audio">
+        <div>
+            <div class="label">Local audio:</div>
+            <audio id="audio1" autoplay controls muted></audio>
+        </div>
+        <div>
+            <div class="label">Remote audio:</div>
+            <audio id="audio2" autoplay controls></audio>
+        </div>
+		<div>
+            <div class="label">Recording Audio:</div>
+            <audio id="recorded" autoplay controls></audio>
+        </div>
+    </div>
+
+    <div id="buttons">
+        <select id="codec">
+            <!-- Codec values are matched with how they appear in the SDP.
+            For instance, opus matches opus/48000/2 in Chrome, and ISAC/16000
+            matches 16K iSAC (but not 32K iSAC). -->
+            <option value="opus">Opus</option>
+            <option value="ISAC">iSAC 16K</option>
+            <option value="G722">G722</option>
+            <option value="PCMU">PCMU</option>
+        </select>
+        <button id="callButton">Call</button>
+        <button id="hangupButton">Hang Up</button>
+    </div>
+     
+<br>	 
+	<div id="buttons">
+        <button id="record" disabled>Start Recording</button>
+        <button id="play" disabled>Play</button>
+        <button id="download" disabled>Download</button>
+    </div>
+
+    <div>
+        <span id="errorMsg"></span>
+    </div>
+	
+   <script src ="loacal_p2p_record.js">  </script> 
+	
+   </body>
+	
+</html>		  
