@@ -1,5 +1,5 @@
 # VoIP_Webrtc_Tool
-### An end-to-end VoIP web application using webrtc framework including functionality to change data stream constraints.
+### An end-to-end VoIP(Voice over Internet Protocol) web application using webrtc framework including functionality to change data stream constraints.
 
 
 #### Description about all the files:
