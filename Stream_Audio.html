@@ -1,0 +1,53 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    
+    <meta id="theme-color" name="theme-color" content="#ffffff">
+
+    <base target="_blank">
+
+    <title>Stream audio</title>
+</head>
+<body>
+
+<div id="container">
+  
+    <audio id="gum-local" controls autoplay></audio>
+
+    <div>
+        <span id="errorMsg"></span>
+    </div>
+    
+</div>
+
+<script>
+const audio = document.querySelector('audio');
+
+const constraints = window.constraints = {
+  audio: true,
+  video: false
+};
+
+function handleSuccess(stream) {
+  const audioTracks = stream.getAudioTracks();
+  console.log('Got stream with constraints:', constraints);
+  console.log('Using audio device: ' + audioTracks[0].label);
+  stream.oninactive = function() {
+    console.log('Stream ended');
+  };
+  window.stream = stream; // make variable available to browser console
+  audio.srcObject = stream;
+}
+
+function handleError(error) {
+  const errorMessage = 'navigator.MediaDevices.getUserMedia error: ' + error.message + ' ' + error.name;
+  errorMsgElement.innerHTML = errorMessage;
+  console.log(errorMessage);
+}
+
+navigator.mediaDevices.getUserMedia(constraints).then(handleSuccess).catch(handleError);
+</script>
+
+</body>
+</html>
